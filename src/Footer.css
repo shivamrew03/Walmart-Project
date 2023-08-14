@@ -1,0 +1,17 @@
+.footer {
+    background-color: #f7f7f7;
+    padding: 20px;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column; /* Display links vertically */
+    gap: 10px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    margin-left: 20px; /* Add some left margin to the links */
+}

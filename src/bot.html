@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="styles.css" /> 
+	<link rel="stylesheet" href="../src/Header.css">
+    <title>Wal-bot</title>
+    
+
+	<!-- seo related -->
+	<title>Chatbot Frontend</title>
+
+	<!-- meta related -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+	<!-- vendor css & style files -->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300|Open+Sans:300|Oxygen|Material+Icons"
+		rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+	<!-- custom css -->
+	<link rel="stylesheet" type="text/css" href="static/main.css">
+	
+
+</head>
+
+<body>
+
+	<header>
+        <div class ="header">
+            <div class ="mobile-menu">
+            <FontAwesomeIcon icon={faBars} />
+              <!-- <button class ="mobile-menu-button"><i class ="fas fa-bars"></i></button> -->
+              <div class ="dropdown-menu">
+                <a href="#">Electronics</a>
+                <a href="#">Clothing</a>
+                <a href="#">Groceries</a>
+                <a href="#">Store Locator</a>
+                <a href="#">Track Orders</a>
+                <a href="#">Customer Service</a>
+              </div>
+            </div>
+            <div class ="logo">
+              <img src="../src/assets/walmart-logo.png" alt="Walmart Logo" class ="logo-image" />
+            </div>
+            <div class ="search">
+              <input type="text" placeholder="Search products..." />
+              
+              <button class ="search-button"><FontAwesomeIcon icon={faMagnifyingGlass} /></button>
+            </div>
+            <button class ="mobile-cart-button"></button>
+            <FontAwesomeIcon icon={faCartShopping} />
+            <a href='./src/camera.html'><img src="./src/assets/barcode.png" alt=""  class ="scanner-logo" /></a>
+          </div>
+    </header>
+
+	<div class="container">
+
+		<div class="row padded_row">
+
+			<!-- right side content -->
+			<div class="col-md-7">
+
+				<div class="chat_window">
+
+					<div class="top_menu">
+						<div class="title">Walbot</div>
+					</div>
+
+					<!-- dynamically rendered -->
+					<ul class="messages"></ul>
+
+					<!-- input -->
+					<div class="bottom_wrapper">
+						<input id="msg_input" placeholder="Say Hi to begin chat..." />
+						<div id="send_button" class="app_button_1">Send</div>
+					</div>
+
+				</div>
+
+			</div>
+
+			<!-- left side content -->
+			<div class="col-md-5">
+				<div class="chat_window">
+
+					<div class="top_menu">
+						<div class="title">Help</div>
+					</div>
+
+					<!-- help container -->
+					<div class="panel-group" id="accordion">
+
+						<!-- help - 1 -->
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h4 class="panel-title">
+									<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion"
+										href="#collapse1">Lorem</a>
+								</h4>
+							</div>
+							<div id="collapse1" class="panel-collapse collapse in">
+								<div class="panel-body">
+									Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis incidunt eaque quidem reiciendis sapiente velit dolores autem soluta culpa voluptate veniam rem itaque, laborum temporibus! Possimus tempore odio inventore ut.
+								</div>
+							</div>
+						</div>
+
+					</div>
+
+				</div>
+			</div>
+
+		</div>
+
+	</div>
+
+	<!-- vendor script files -->
+	<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js">
+	</script>
+
+	<!-- custom scripts -->
+	<script src="main.js"></script>
+</body>
+
+</html>

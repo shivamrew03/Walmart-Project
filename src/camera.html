@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+    <link rel="stylesheet" href = "../src/Header.css">
+    <style>
+      body{
+        margin:0;
+        padding: 0;
+      }
+        #cameraLink{
+          display: inline-block;
+          position: absolute;
+          top:20vh;
+          margin-left: 40vw;
+          font-size: 60px;
+          color:white;
+          text-decoration: none;
+            /* padding-left:auto auto; */
+        }
+    </style>
+</head>
+<body >
+    <header>
+        <div class ="header">
+            <div class ="mobile-menu">
+            <FontAwesomeIcon icon={faBars} />
+              <button class ="mobile-menu-button"><i class ="fas fa-bars"></i></button>
+              <div class ="dropdown-menu">
+                <a href="#">Electronics</a>
+                <a href="#">Clothing</a>
+                <a href="#">Groceries</a>
+                <a href="#">Store Locator</a>
+                <a href="#">Track Orders</a>
+                <a href="#">Customer Service</a>
+              </div>
+            </div>
+            <div class ="logo">
+              <img src="../src/assets/walmart-logo.png" alt="Walmart Logo" class ="logo-image" />
+            </div>
+            <div class ="search">
+              <input type="text" placeholder="Search products..." />
+              
+              <button class ="search-button"><FontAwesomeIcon icon={faMagnifyingGlass} /></button>
+            </div>
+            <button class ="mobile-cart-button"></button>
+            <FontAwesomeIcon icon={faCartShopping} />
+            <a href='./src/camera.html'><img src="./src/assets/barcode.png" alt=""  class ="scanner-logo" /></a>
+          </div>
+    </header>
+  <!-- <div id="cameraLink" style="width: 100vw; height: 100vh;"></div> -->
+    <a href="#" id = "cameraLink" class = "To-open">Tap</a>
+  <script>
+    document.getElementById("cameraLink").addEventListener("focus", function(event) {
+        event.preventDefault();
+        // Request access to the back camera
+        navigator.mediaDevices.getUserMedia({ video: { facingMode: "environment" } })
+            .then(function(stream) {
+                // Create a video element to display the camera stream
+                var video = document.createElement("video");
+                video.height = 1000;
+                video.width = 380;
+                video.srcObject = stream;
+                video.autoplay = true;
+                document.body.appendChild(video);
+            })
+            .catch(function(error) {
+                console.error("Back camera access error: " + error);
+            });
+    });
+</script>
+</body>
+</html>

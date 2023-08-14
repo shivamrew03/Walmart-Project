@@ -1,0 +1,63 @@
+.main-content {
+    padding: 20px;
+}
+
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 10px;
+    max-width: 100%;
+}
+
+.image-grid img {
+    width: 100%;
+    height: auto;
+    display: flex;
+    border-radius: 8px;
+}
+.first{
+    margin-top: 80px;
+}
+
+.Chat-bot{
+    /* width: 50px; */
+    /* right:20vh; */
+    margin-right: 30px;
+    position: fixed;
+    top: 85vh;
+    right: 5vw;
+    width: 20vw;
+    /* height: 15vh; */
+    /* text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.5); */
+
+}
+.Shraddha{
+    font:bolder;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    padding: 8px;
+    /* margin-bottom: 5vh; */
+    font-weight: bold;
+}
+.reel-icon{
+    padding-bottom: 5px;
+}
+
+.Reel-Section{
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+}
+
+.txt{
+    padding-left: 21px;
+    margin: 0;
+    text-decoration: none;
+    font-weight: 300;
+}
+.Reel-Section img{
+    width: 180px;
+    padding: 5px;
+    border-radius: 27px;
+}

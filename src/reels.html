@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reals Mart</title>
+  <!-- <link rel="stylesheet" href="styles.css"> -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Open Sans', sans-serif;
+      /* height: 80vh; */
+    }
+
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      /* min-height: 100vh; */
+      /* height: 100vh;
+  width: 100vw; */
+    }
+
+    ::-webkit-scrollbar {
+      width: 0;
+    }
+
+    .container .reels_videos {
+      position: relative;
+      width: 100vw;
+      height: 100vh;
+      overflow-y: auto;
+      scroll-snap-type: y mandatory;
+    }
+
+    .container .reels_videos .video {
+      position: relative;
+      width: 100vw;
+      height: 100vh;
+      scroll-snap-align: start;
+    }
+
+    .container .reels_videos .video video {
+      position: absolute;
+      top: 0;
+      left: 0;
+      /* padding: 1.5px; */
+      width: 100vw;
+      height: 100vh;
+      object-fit: cover;
+    }
+
+    .container .reels_videos .video .top {
+      position: absolute;
+      top: 10px;
+      left: 0;
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      padding: 0 10px;
+      color: #fff;
+    }
+
+    .container .reels_videos .video .top h4 {
+      color: #fff;
+      font-size: 35px;
+      letter-spacing: .3px;
+      font-weight: 500;
+      margin-left: 14px;
+      margin-top: 5px;
+    }
+
+    .container .reels_videos .video .top i {
+      font-size: 40px;
+      margin-right: 14px;
+      margin-top: 5px;
+      user-select: none;
+    }
+
+    .container .reels_videos .video .icons {
+      /* position: relative;
+  bottom: 2vh; */
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      right: 2vw;
+      bottom: 5vh;
+      /* height: 20vh; */
+    }
+
+    .container .reels_videos .video .icons div {
+      display: flex;
+      flex-direction: column;
+      height: 10vh;
+    }
+
+    .container .reels_videos .video .icons i {
+      font-size: 40px;
+      color: #fff;
+      margin-top: 2vh;
+    }
+
+    .container .reels_videos .video .icons small {
+      margin-top: 1vh;
+      font-size: 20px;
+      color: #fff;
+    }
+
+    .container .reels_videos .video .icons img {
+      width: 40px;
+      height: 40px;
+      border-radius: 10px;
+      /* box-shadow: 0 0 2px 4px; */
+      /* border:black; */
+
+      margin-top: 2vh;
+    }
+
+    .container .reels_videos .video .user_profile {
+      /* position: relative;
+  bottom: 2vh; */
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      left: 2vw;
+      bottom: 8vh;
+      /* height: 20vh; */
+    }
+
+    .container .reels_videos .video .user_profile div {
+      /* position: relative;
+  bottom: 2vh; */
+      display: flex;
+      flex-direction: row;
+      ;
+      align-items: center;
+
+    }
+
+    .container .reels_videos .video .user_profile div button {
+      background-color: transparent;
+      color: #fff;
+      border: solid;
+      /* padding: auto 40px;   */
+      font-size: 5vw;
+      height: 5vh;
+      width: 25vw;
+      border-radius: 15px;
+      margin-left: 20px;
+    }
+
+
+    .container .reels_videos .video .user_profile div h4 {
+      color: #fff;
+      margin-left: 20px;
+      font-size: 20px;
+      letter-spacing: 1px;
+    }
+
+    .container .reels_videos .video .user_profile div p {
+      color: #fff;
+      font-size: 6vw;
+      margin-top: 3vh;
+      margin-bottom: 5vh;
+    }
+
+    img {
+      width: 15vw;
+      border-radius: 10vw;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="reels_videos">
+      <div class="video">
+        <video
+          src="assets/videos/after-effects-2023-new-nike-shoes-video-advertising-1280-ytshorts.savetube.me.mp4"></video>
+        <div class="top">
+          <h4>Reels</h4>
+          <i class="bi bi-camera"></i>
+        </div>
+        <div class="icons">
+          <div>
+            <i class="bi bi-heart"></i>
+            <small>11.1k</small>
+          </div>
+          <div>
+            <i class="bi bi-chat"></i>
+            <small>5.6k</small>
+          </div>
+          <i class="bi bi-send"></i>
+          <i class="bi bi-three-dots-vertical"></i>
+          <img src="assets/1680072480720.jpeg" alt="">
+        </div>
+
+        <div class="user_profile">
+          <div>
+            <img src="assets/1680436256436.jpeg" alt="">
+            <h4>Mihir</h4>
+            <button>Follow</button>
+          </div>
+          <div>
+            <p>Best offers on Nike shoes.</p>
+          </div>
+          <div>
+            <h4>Song name .Original video</h4>
+          </div>
+        </div>
+      </div>
+      <div class="video">
+        <video
+          src="assets/videos/iphone-14-pro-max-release-at-walmart-1280-ytshorts.savetube.me.mp4"></video>
+        <div class="top">
+          <h4>Reels</h4>
+          <i class="bi bi-camera"></i>
+        </div>
+        <div class="icons">
+          <div>
+            <i class="bi bi-heart"></i>
+            <small>11.1k</small>
+          </div>
+          <div>
+            <i class="bi bi-chat"></i>
+            <small>5.6k</small>
+          </div>
+          <i class="bi bi-send"></i>
+          <i class="bi bi-three-dots-vertical"></i>
+          <img src="assets/1680072480720.jpeg" alt="">
+        </div>
+
+        <div class="user_profile">
+          <div>
+            <img src="assets/1680436256436.jpeg" alt="">
+            <h4>Mihir</h4>
+            <button>Follow</button>
+          </div>
+          <div>
+            <p>Iphone 14 pro unboxing.</p>
+          </div>
+          <div>
+            <h4>Song name .Original video</h4>
+          </div>
+        </div>
+      </div>
+      <div class="video">
+        <video
+          src="assets/videos/fishing-deals-lews-spinning-combo-marcstv-1280-ytshorts.savetube.me.mp4"></video>
+        <div class="top">
+          <h4>Reels</h4>
+          <i class="bi bi-camera"></i>
+        </div>
+        <div class="icons">
+          <div>
+            <i class="bi bi-heart"></i>
+            <small>11.1k</small>
+          </div>
+          <div>
+            <i class="bi bi-chat"></i>
+            <small>5.6k</small>
+          </div>
+          <i class="bi bi-send"></i>
+          <i class="bi bi-three-dots-vertical"></i>
+          <img src="assets/1680072480720.jpeg" alt="">
+        </div>
+
+        <div class="user_profile">
+          <div>
+            <img src="assets/1680436256436.jpeg" alt="">
+            <h4>Mihir</h4>
+            <button>Follow</button>
+          </div>
+          <div>
+            <p>Fishing Deals</p>
+          </div>
+          <div>
+            <h4>Song name .Original video</h4>
+          </div>
+        </div>
+      </div>
+      <div class="video">
+        <video
+          src="assets/videos/that-walmart-guy-has-a-great-deal-on-a-iphone-11-1280-ytshorts.savetube.me.mp4"></video>
+        <div class="top">
+          <h4>Reels</h4>
+          <i class="bi bi-camera"></i>
+        </div>
+        <div class="icons">
+          <div>
+            <i class="bi bi-heart"></i>
+            <small>11.1k</small>
+          </div>
+          <div>
+            <i class="bi bi-chat"></i>
+            <small>5.6k</small>
+          </div>
+          <i class="bi bi-send"></i>
+          <i class="bi bi-three-dots-vertical"></i>
+          <img src="assets/1680072480720.jpeg" alt="">
+        </div>
+
+        <div class="user_profile">
+          <div>
+            <img src="assets/1680436256436.jpeg" alt="">
+            <h4>Mihir</h4>
+            <button>Follow</button>
+          </div>
+          <div>
+            <p>Follow For More tech insights</p>
+          </div>
+          <div>
+            <h4>Song name .Original video</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    const videos = document.querySelectorAll('.container .reels_videos video');
+
+    for (let i = 0; i < videos.length; i++) {
+      videos[i].addEventListener("ended", () => {
+        videos[i].currentTime = 0;
+        videos[i].loop = true;
+        videos[i].play();
+      })
+      videos[i].addEventListener("mouseleave", () => {
+        videos[i].pause();
+      });
+      videos[i].addEventListener("touchmove", () => {
+        videos[i].pause();
+      });
+      videos[i].addEventListener("click", () => {
+        if (videos[i].paused) {
+          videos[i].play();
+        }
+        else {
+          videos[i].pause();
+        }
+      });
+
+    }
+  </script>
+</body>
+
+</html>
